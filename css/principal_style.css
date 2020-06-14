@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+
+.header{
+	background: #9D255C;
+	color: #FFFFFF;
+	position: fixed;
+	z-index: 100;
+	width: 100%;
+}
+.footer{
+	background: #2C3E50;
+	color: #FFFFFF;
+	height: 50px;
+	padding: 10px;
+}
+
+.navigation-menu{
+	height: auto;
+}
+
+.navigation-menu ul li{
+	list-style: none;
+	float: right;
+}
+.navigation-menu ul li a{
+	text-decoration: none;
+	margin-right: 15px;
+	padding: 10px;
+	float: right;
+	color: #FFFFFF;
+	font-size: 16pt;
+}
+.navigation-menu ul li a:hover{
+	background: #FFFFFF;
+	color:#9D255C;
+}
+
+.banner{
+	padding: 10px;
+	height: 600px;
+	background-image: url("../img/fondo2.jpg");
+	background-size: 100% 100%;
+}
+
+.section{
+	padding-top: 80px;
+}
+
+.section-title{
+	background: #FFFFFF;
+	color: #000000;
+	text-align: center;
+	font-family: 'Marck Script', cursive;
+	font-size: 30pt;
+}
+.subtitle{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16pt;
+}
+p{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12pt;
+}
+.btn-primary{
+	background: #9D255C !important;
+	border-color: #9D255C !important;
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+.contact-form-container{
+	padding: 10px;
+	text-align: center;
+}
+.contact-form{
+	text-align: left;
+}

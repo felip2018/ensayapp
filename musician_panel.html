@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Ensayapp - Admin</title>
+    
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style_template.css">
+    <link rel="stylesheet" href="./css/fontawesome/css/all.css">
+    
+  </head>
+  <body>
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-12" id="top_menu">
+            <b class="title_app">Ensayapp</b>
+          </div>
+          <div class="col-12">
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2" id="lateral_menu">
+                <table class="table">
+                  <tr>
+                    <td>
+                      <button class="btn btn-secondary btn-block" onclick="loadPage('admin','inicio')"><b>MUSICIAN</b></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <button class="btn btn-secondary btn-block" onclick="loadPage('admin','reservas')"><b>Reservas</b></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <button class="btn btn-secondary btn-block" onclick="loadPage('admin','salas')"><b>Salas de ensayo</b></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <button class="btn btn-secondary btn-block" onclick="loadPage('admin','clientes')"><b>Clientes</b></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <button class="btn btn-secondary btn-block" onclick="loadPage('admin','gastos')"><b>Gastos</b></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <button class="btn btn-secondary btn-block" onclick="loadPage('admin','reportes')"><b>Reportes</b></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <button class="btn btn-primary btn-block"><i class="fas fa-sign-out-alt"></i> <b>Salir</b></button>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10" id="container_content">
+                
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/navigation.js"></script>
+  </body>
+</html>

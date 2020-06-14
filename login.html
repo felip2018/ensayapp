@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Ensayapp - Login</title>
+    
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style_template.css">
+    
+
+  </head>
+  <body id="login_body">
+    <div class="container-fluid">
+        <div class="row justify-content-md-center">
+          <div id="login_container" class="col-3">
+              <div id="header_login">
+                <img src="./img/Icono.jpg" alt="Logotipo" id="logo" style="width:180px;height: 180px;"><br/>
+              </div>
+              <form class="px-4 py-3">
+                <div class="form-group">
+                  <label><b>Correo electrónico</b></label>
+                  <input type="email" class="form-control" id="correo" placeholder="Correo Electrónico" required="true">
+                </div>
+                <div class="form-group">
+                  <label><b>Contraseña</b></label>
+                  <input type="password" class="form-control" id="clave" placeholder="Contraseña" required="true">
+                </div>
+                <button type="button" class="btn btn-primary btn-block btn-login">Iniciar sesión</button>
+              </form>
+              <div class="dropdown-divider"></div>
+              <button class="btn dropdown-item" onclick="verFormularioRegistro()">Nuevo? Regístrate</button>
+              <button class="btn dropdown-item" onclick="verOlvideMiContrasenia()">¡Ups! olvidé mi contraseña.</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal" id="myModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Modal body text goes here.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Save changes</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
+      <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+
+      <script type="text/javascript" src="./js/core.js"></script>
+  </body>
+</html>

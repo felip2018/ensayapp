@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 200 200" style="enable-background:new 0 0 200 200;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#4A225A;stroke:#4A225A;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#4A225A;stroke-width:7;stroke-miterlimit:10;}
+	.st2{fill:#FFFFFF;stroke:#4A225A;stroke-width:5;stroke-miterlimit:10;}
+	.st3{fill:#4A225A;stroke:#4A225A;stroke-width:10;stroke-miterlimit:10;}
+	.st4{fill:#FFFFFF;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
+	.st5{fill:#1D1D1B;stroke:#4A225A;stroke-width:6;stroke-miterlimit:10;}
+	.st6{fill:#4A225A;}
+	.st7{font-family:'MarckScript-Regular';}
+	.st8{font-size:44.4547px;}
+	.st9{fill:#9E245D;}
+	.st10{font-family:'Montserrat-Regular';}
+	.st11{font-size:22.2273px;}
+</style>
+<g id="Imagotipo">
+	<g id="Icono_Negro_3_">
+		<path class="st0" d="M63.4,93H49.5c-4.8,0-8.7-3.9-8.7-8.7V50.5c0-4.8,3.9-8.7,8.7-8.7h13.9c4.8,0,8.7,3.9,8.7,8.7v33.8
+			C72.1,89.1,68.2,93,63.4,93z"/>
+		<path class="st1" d="M56.5,49.4c0-2.1,0.6-20.8,19.4-32.7c17.7-11.1,37.2-7.2,39.9-6.6c2.3,0.5,23.2,5.3,31.6,22.2
+			c3,6.1,3.4,11.7,3.3,15.1"/>
+		<path class="st0" d="M157.7,93h-13.9c-4.8,0-8.7-3.9-8.7-8.7V50.5c0-4.8,3.9-8.7,8.7-8.7h13.9c4.8,0,8.7,3.9,8.7,8.7v33.8
+			C166.4,89.1,162.5,93,157.7,93z"/>
+		<path class="st0" d="M112.2,93H95c-6,0-10.9-4.9-10.9-10.9V45.2c0-6,4.9-10.9,10.9-10.9h17.3c6,0,10.9,4.9,10.9,10.9v36.9
+			C123.1,88.1,118.2,93,112.2,93z"/>
+		<ellipse class="st0" cx="103.6" cy="93" rx="9.8" ry="8.4"/>
+		<line class="st2" x1="103.6" y1="93" x2="103.6" y2="119.5"/>
+		<path class="st3" d="M48.7,76.2h-6.4c-2.2,0-4-1.8-4-4v-9.7c0-2.2,1.8-4,4-4h6.4c2.2,0,4,1.8,4,4v9.7C52.8,74.4,51,76.2,48.7,76.2
+			z"/>
+		<path class="st3" d="M164.3,76.2H158c-2.2,0-4-1.8-4-4v-9.7c0-2.2,1.8-4,4-4h6.4c2.2,0,4,1.8,4,4v9.7
+			C168.4,74.4,166.6,76.2,164.3,76.2z"/>
+		<g id="Rayas_6_">
+			<line class="st4" x1="88" y1="49.7" x2="100.2" y2="49.7"/>
+			<line class="st4" x1="106.7" y1="49.7" x2="119" y2="49.7"/>
+			<line class="st4" x1="88.1" y1="58.5" x2="100.3" y2="58.5"/>
+			<line class="st4" x1="106.8" y1="58.5" x2="119.1" y2="58.5"/>
+			<line class="st4" x1="88.3" y1="68" x2="100.6" y2="68"/>
+			<line class="st4" x1="107.1" y1="68" x2="119.3" y2="68"/>
+			<line class="st4" x1="88.1" y1="76.3" x2="100.3" y2="76.3"/>
+			<line class="st4" x1="106.8" y1="76.3" x2="119.1" y2="76.3"/>
+		</g>
+		<line class="st5" x1="88" y1="119.5" x2="119.3" y2="119.5"/>
+	</g>
+	<text transform="matrix(1.1711 0 0 1 -7.080078e-02 158.0674)" class="st6 st7 st8">Ensayapp</text>
+	<text transform="matrix(1.1711 0 0 1 20.207 194.1768)" class="st9 st10 st11">Make it easy</text>
+</g>
+</svg>

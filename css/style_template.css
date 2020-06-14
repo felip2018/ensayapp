@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+.btn-primary,.btn-info{
+	background: #9D255C !important;
+	border-color: #9D255C !important;
+	font-family: 'Montserrat', sans-serif;
+}
+.btn-secondary{
+	background: #DDDDDD !important;
+	border-color: #DDDDDD !important;
+	font-family: 'Montserrat', sans-serif;
+	color: #000000;
+}
+
+
+
+#login_body{
+	background-image: url("../img/bg.jpg");	
+}
+#login_container{
+	background: #ffffff;
+	border-radius: 5px;
+	margin-top: 100px;
+	padding: 10px 10px 20px 10px;
+}
+#header_login{
+	text-align: center;
+}
+
+.title_app{
+	/*font-family: 'Lobster', cursive;*/
+	font-family: 'Marck Script', cursive;
+	font-size: 20pt;
+}
+
+.title_section{
+	font-family: 'Marck Script', cursive;
+	font-size: 22pt;
+}
+
+#logo{
+	width: 50px;
+	height: 70px;
+	float: center;
+}
+
+#top_menu{
+	text-align: center;
+	background: #9D255C;
+	/*background: #4B235B;*/
+	/*background: #51406A;*/
+	/*background: #ED7D00;*/
+	color: #ffffff;
+	padding: 10px;
+}
+
+#lateral_menu{
+	/*border: 1px solid red;*/
+	padding: 10px;
+	height: auto;
+	/*background: #2c3e50;*/
+	/*background: #6C757D;*/
+	background: #CCCCCC;
+	position: relative;
+}
+
+
+#container_content{
+	padding: 10px;
+	height: 100vh;
+	background: #F6F6F6;
+	overflow-y: scroll; 
+}
+
+.page-header{
+	width: 100%;
+	padding: 10px;
+	box-shadow: 0px 0px 15px #dddddd;
+	float: left;
+	margin-bottom: 10px;
+	/*text-align: center;*/
+}
+
+.rooms_container{
+	border:1px solid blue;
+	padding: 10px;
+}
