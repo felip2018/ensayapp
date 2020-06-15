@@ -44,5 +44,15 @@ function showSideMenu() {
 
 
 jQuery(".btn-close-session").click(function () {
-	console.log("Close session");
+
+	jQuery('#myModal').modal('show')
+	jQuery(".modal-title").html('Cerrar sesión');
+	jQuery(".modal-body").html('<p>¿Esta seguro de cerrar la sesión?</p>');
+
+	jQuery(".modal-footer").html('<button type="button" class="btn btn-secondary" data-dismiss="modal">No</button><button type="button" class="btn btn-primary btn-accept">Sí, cerrar sesión</button>');
+
+	jQuery(".btn-accept").click(function () {
+		window.location.href = "login.html";
+	})
+
 })
