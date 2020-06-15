@@ -13,10 +13,12 @@ body{
 	width: 100%;
 }
 .footer{
+	text-align: center;
 	background: #2C3E50;
 	color: #FFFFFF;
 	height: 50px;
 	padding: 10px;
+	font-weight: bold;
 }
 
 .navigation-menu{

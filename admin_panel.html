@@ -12,12 +12,22 @@
   <body>
     <div class="container-fluid">
         <div class="row">
-          <div class="col-12" id="top_menu">
-            <b class="title_app">Ensayapp</b>
-          </div>
           <div class="col-12">
             <div class="row">
-              <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2" id="lateral_menu">
+              <div class="col-2 top_lateral_menu">
+                <button class="btn btn-secondary" id="btn-hide" onclick="hideSideMenu()"><i class="fa fa-arrow-left"></i></button>
+              </div>
+              <div class="col-10" id="top_menu">
+                <button class="btn btn-primary float-left" id="btn-show" onclick="showSideMenu()"><i class="fa fa-arrow-right"></i></button>
+                <b class="title_app">Ensayapp</b>
+                <button class="btn btn-primary float-right" id="btn-bell" onclick="showNotifications()"><i class="fa fa-bell"></i></button>
+              </div>    
+            </div>
+          </div>
+          
+          <div class="col-12">
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 lateral_menu">
                 <table class="table">
                   <tr>
                     <td>
@@ -51,7 +61,7 @@
                   </tr>
                   <tr>
                     <td>
-                      <button class="btn btn-primary btn-block"><i class="fas fa-sign-out-alt"></i> <b>Salir</b></button>
+                      <button class="btn btn-primary btn-block btn-close-session"><i class="fas fa-sign-out-alt"></i> <b>Salir</b></button>
                     </td>
                   </tr>
                 </table>
@@ -62,11 +72,43 @@
             </div>
           </div>
         </div>
+        <div class="row">
+          <div class="col-2 top_lateral_menu">
+          </div>
+          <div class="col-10 footer">
+            <p>&#169; Copyright 2020 - Todos los derechos reservados</p>
+          </div>          
+        </div>
     </div>
+  
+    <div class="modal" id="myModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Modal body text goes here.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Save changes</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
     <script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="./js/bootstrap.min.js"></script>
     <script type="text/javascript" src="./js/navigation.js"></script>
+
+    <script type="text/javascript">
+      jQuery('#container_content').load('views/admin/inicio.html');
+    </script>
+
   </body>
 </html>
