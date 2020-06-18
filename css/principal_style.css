@@ -5,6 +5,12 @@ body{
 	font-family: 'Montserrat', sans-serif;
 }
 
+input, textarea{
+	font-family: 'Montserrat', sans-serif !important;	
+	font-size: 15pt;
+	color:red;
+}
+
 .header{
 	background: #9D255C;
 	color: #FFFFFF;

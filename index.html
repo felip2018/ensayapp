@@ -13,7 +13,8 @@
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="
 	sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	
-	
+	<script type="text/javascript" src="js/index.js"></script>
+
 </head>
 <body>
 
@@ -133,26 +134,26 @@
 						<form class="row contact-form">
 							<div class="col-6">
 								<p>Nombre</p>
-								<input class="form-control" type="text" name="nombre">
+								<input class="form-control" type="text" name="nombre" id="nombre" info="Nombre" required="true">
 							</div>
 							<div class="col-6">
 								<p>Apellido</p>
-								<input class="form-control" type="text" name="apellido">
+								<input class="form-control" type="text" name="apellido" id="apellido" info="Apellido" required="true">
 							</div>
 							<div class="col-12">
 								<p>Correo electrónico</p>
-								<input class="form-control" type="text" name="correo">
+								<input class="form-control" type="text" name="correo" id="correo" info="Correo" required="true">
 							</div>
 							<div class="col-12">
 								<p>Asunto</p>
-								<input class="form-control" type="text" name="asunto">
+								<input class="form-control" type="text" name="asunto" id="asunto" info="Asunto" required="true">
 							</div>
 							<div class="col-12">
 								<p>Mensaje</p>
-								<textarea class="form-control" name="mensaje" id="mensjae" rows="4"></textarea>
+								<textarea class="form-control" name="mensaje" id="mensaje" info="Mensaje" rows="4" required="true"></textarea>
 							</div>
 							<div class="col-12">
-								<button class="btn btn-primary btn-block">Enviar</button>
+								<button type="button" class="btn btn-primary btn-block" onclick="validateContactForm()">Enviar</button>
 							</div>
 						</form>
 					</div>	
@@ -190,5 +191,24 @@
 
 	</div>
 	
+	<div class="modal" id="myModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Modal body text goes here.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Save changes</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+    </div>
 </body>
 </html>

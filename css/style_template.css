@@ -16,6 +16,10 @@ body{
 	font-family: 'Montserrat', sans-serif;
 	color: #000000;
 }
+.back_link{
+	text-decoration: none;
+	color: #9D255C;
+}
 
 #btn-show{
 	display: none;
