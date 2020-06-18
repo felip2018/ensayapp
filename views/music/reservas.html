@@ -1,0 +1,80 @@
+<style>
+	#calendar {
+    width: 100%;
+  }
+</style>
+<link href='./js/fullcalendar-4.4.0/packages/core/main.css' rel='stylesheet' />
+<link href='./js/fullcalendar-4.4.0/packages/daygrid/main.css' rel='stylesheet' />
+<link href='./js/fullcalendar-4.4.0/packages/timegrid/main.css' rel='stylesheet' />
+<link href='./js/fullcalendar-4.4.0/packages/list/main.css' rel='stylesheet' />
+<script src='./js/fullcalendar-4.4.0/packages/core/main.js'></script>
+<script src='./js/fullcalendar-4.4.0/packages/interaction/main.js'></script>
+<script src='./js/fullcalendar-4.4.0/packages/daygrid/main.js'></script>
+<script src='./js/fullcalendar-4.4.0/packages/timegrid/main.js'></script>
+<script src='./js/fullcalendar-4.4.0/packages/list/main.js'></script>
+
+<div class="row">
+  <div class="col-12">
+    <div class="page-header">
+      <div class="row">
+        <div class="col-11">
+          <p class="title_section">Reservaciones</p>
+          <p>
+            En esta sección podrá administrar las reservaciones registradas en el sistema.
+          </p>    
+        </div>
+        <div class="col-1">
+          <button class="btn btn-info float-right">
+            <i class="fa fa-info"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+	<div class="col-12">
+		<div id="calendar">
+			
+		</div>
+	</div>
+</div>
+
+
+<script>
+
+  //document.addEventListener('DOMContentLoaded', function() {
+  	//console.log("Load Calendar XD");
+    var calendarEl = document.getElementById('calendar');
+
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+      plugins: [ 'interaction', 'dayGrid', 'timeGrid', 'list' ],
+      header: {
+        left: 'prev,next today',
+        center: 'title',
+        right: 'dayGridMonth,timeGridWeek,timeGridDay,listMonth'
+      },
+      defaultDate: '2020-06-16',
+      navLinks: true, // can click day/week names to navigate views
+      businessHours: true, // display business hours
+      editable: true,
+      events: [
+        {
+          title: 'Ensayo sala A',
+          start: '2020-06-17 08:00',
+          constraint: 'businessHours',
+          color: '#ff9f89',
+          extendedProps: {
+            id: 'id_reserva'
+          },
+        },
+      ],
+      eventClick: function(arg) {
+        console.log(arg.event.extendedProps);
+      }
+    });
+
+    calendar.render();
+  //});
+
+</script>
