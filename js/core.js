@@ -1,33 +1,48 @@
 jQuery(".btn-login").click(function () {
-	
+
 	var correo = jQuery("#correo");
 	var clave = jQuery("#clave");
 
 	if (correo.val() != "") {
 
-		if (clave.val() != "") {
+		if (emailRegex.test(correo.val())) {
 
-			if (correo.val() == "admin@hotmail.com" &&
-				clave.val() == "admin") {
-				window.location.href = "admin_panel.html";
+			if (clave.val() != "") {
+
+				if (correo.val() == "admin@hotmail.com" &&
+					clave.val() == "admin") {
+					window.location.href = "admin_panel.html";
+				}
+
+				if (correo.val() == "musician@hotmail.com" &&
+					clave.val() == "musician") {
+					window.location.href = "musician_panel.html";
+				}
+
+				if (correo.val() == "auxiliary@hotmail.com" &&
+					clave.val() == "auxiliary") {
+					window.location.href = "auxiliary_panel.html";
+				}			
+
+			}else{
+				jQuery('#myModal').modal('show')
+				jQuery(".modal-title").html('Advertencia!');
+				jQuery(".modal-body").html('<div class="alert alert-warning"><p>Ingrese la contraseña para iniciar sesión.</p></div>');
+				jQuery(".modal-footer").html('<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button><button type="button" class="btn btn-primary">Registrarse</button>');
 			}
-
-			if (correo.val() == "musician@hotmail.com" &&
-				clave.val() == "musician") {
-				window.location.href = "musician_panel.html";
-			}
-
-			if (correo.val() == "auxiliary@hotmail.com" &&
-				clave.val() == "auxiliary") {
-				window.location.href = "auxiliary_panel.html";
-			}			
 
 		}else{
-			jQuery('#myModal').modal('show')
+			
+			jQuery('#myModal').modal({backdrop: 'static', keyboard: false})
 			jQuery(".modal-title").html('Advertencia!');
-			jQuery(".modal-body").html('<div class="alert alert-warning"><p>Ingrese la contraseña para iniciar sesión.</p></div>');
-			jQuery(".modal-footer").html('<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button><button type="button" class="btn btn-primary">Registrarse</button>');
+			jQuery(".modal-body").html('<div class="alert alert-danger"><p>El <b>correo electrónico</b> ingresado no cuenta con una estructura válida, por favor verifique.</p></div>');
+			jQuery(".modal-footer").html('<button type="button" class="btn btn-primary btn-accept" data-dismiss="modal">Aceptar</button>');
+
+			jQuery('.btn-accept').click(function () {
+				correo.focus();
+			});
 		}
+
 
 	}else{
 		jQuery('#myModal').modal('show')
