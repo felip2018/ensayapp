@@ -1,0 +1,81 @@
+{
+   "admin":{
+      "folder":"admin",
+      "options":[
+         {
+            "view":"inicio",
+            "label":"Inicio"
+         },
+         {
+            "view":"reservas",
+            "label":"Reservaciones"
+         },
+         {
+            "view":"salas",
+            "label":"Salas de ensayo"
+         },
+         {
+            "view":"gastos",
+            "label":"Gastos"
+         },
+         {
+            "view":"clientes",
+            "label":"Clientes"
+         }
+      ]
+   },
+   "musician":{
+      "folder":"music",
+      "options":[
+         {
+            "view":"inicio",
+            "label":"Inicio"
+         },
+         {
+            "view":"reservar",
+            "label":"Reservar sala"
+         },
+         {
+            "view":"reservas",
+            "label":"Historia de reservaciones"
+         },
+         {
+            "view":"salas",
+            "label":"Salas de ensayo"
+         },
+         {
+            "view":"calificar_sala",
+            "label":"Calificar reservación"
+         }
+      ]
+   },
+   "auxiliary":{
+      "folder":"auxiliary",
+      "options":[
+         {
+            "view":"inicio",
+            "label":"Inicio"
+         },
+         {
+            "view":"activos",
+            "label":"Activos"
+         },
+         {
+            "view":"movimientos",
+            "label":"Movimientos"
+         },
+         {
+            "view":"nuevosproductos",
+            "label":"Registrar producto"
+         },
+         {
+            "view":"proveedor",
+            "label":"Proveedores"
+         },
+         {
+            "view":"reportes",
+            "label":"Reportes"
+         }
+      ]
+   }
+}
