@@ -16,77 +16,88 @@
 
 <html>
 <body>
-    <p>Fecha:  <input type="date">
-    </p>
-    
-    
-    
-    
-    <p>Activo:  <select name="menu">
-        <option>....</option>
-        <option>Bateria</option>
-        <option>Piano</option>
-        <option>Guitarra</option>
-        <option>Guitarra Electrica</option>
-        <option>Amplificador Guitarra</option>
-        <option>Violin</option>
-        <option>Bajo</option>
-        <option>Trompeta</option>
-      </select> 
-    </p>
-    
-    
-    
-    
-    
-    <P>Movimiento:  <select name="menu">
-        <option>....</option>
-        <option>Entradas Activos</option>
-        <option>Salidas Activos</option>
-    </select>
-    </p>
-       
-    
-    
-    
-    
-    <P>Cantidad:  	<input type="number">
-        </p>
+  <form action="/action_page.php">
+    <table>
+      <tr>
+        <td>
+          <p>Fecha: </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="date">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>Activo:</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <select name="menu">
+            <option>....</option>
+            <option>Bateria</option>
+            <option>Piano</option>
+            <option>Guitarra</option>
+            <option>Guitarra Electrica</option>
+            <option>Amplificador Guitarra</option>
+            <option>Violin</option>
+            <option>Bajo</option>
+            <option>Trompeta</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><p>Movimiento</p></td>
+      </tr>
+      <tr>
+        <td>
+          <select name="menu">
+            <option>....</option>
+            <option>Entradas Activos</option>
+            <option>Salidas Activos</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><p>Cantidad</p></td>
+      </tr>
+      <tr>
+        <td><input type="number"></td>
+      </tr>
+      <tr>
+        <td><p>Precio de alquiler:</p></td>
+      </tr>
+      <tr>
+        <td>
+          <select id="alquiler" name="precios">
+            <option value="$">$</option>
+            <option value="$10.000">$10.000</option>
+            <option value="$20.000">$20.000</option>
+            <option value="$25.000">$25.000</option>
+            <option value="$30.000">$30.000</option>
+            <option value="$35.000">$35.000</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><p>Horas alquiler</p></td>
+      </tr>
+      <tr>
+        <td><input type="number"></td>
+      </tr>
+      <tr>
+        <td><p>Observaciones</p></td>
+      </tr>
+      <tr>
+        <td><textarea name="texto" rows="4" cols="40" placeholder="Escriba algo"></textarea></td>
+      </tr>
+    </table>
         
-        <form action="/action_page.php">
-          
-            <label for="cars">Precio de alquiler:</label>
-            <select id="alquiler" name="precios">
-              <option value="$">$</option>
-              <option value="$10.000">$10.000</option>
-              <option value="$20.000">$20.000</option>
-              <option value="$25.000">$25.000</option>
-              <option value="$30.000">$30.000</option>
-              <option value="$35.000">$35.000</option>
-            </select>
-
-
-
-            <P>Horas alquiler:  	<input type="number">
-            </p>
-        
-        
-        
-        
-        
-        
-            <p>Observaciones:  <textarea name="texto" rows="4" cols="40" placeholder="Escriba algo"></textarea>
-        </p><br>
-        
-
-
-
-
-    
-    <p>
       <input type="reset" value="GUARDAR INFORMACION" style="margin-left: 30px">
       <input type="submit" value="BORRAR INFORMACION" style="margin-left: 250px">
-    </p>
+  </form>
     
 </body>
 </html>
